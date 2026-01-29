@@ -1,0 +1,314 @@
+{
+  "General Knowledge": [
+    {
+      "question": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Madrid"],
+      "correct": "Paris"
+    },
+    {
+      "question": "How many legs does a spider have?",
+      "options": ["6", "8", "10", "12"],
+      "correct": "8"
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "correct": "Pacific"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Picasso", "Da Vinci", "Van Gogh", "Monet"],
+      "correct": "Da Vinci"
+    },
+    {
+      "question": "What year did World War II end?",
+      "options": ["1943", "1944", "1945", "1946"],
+      "correct": "1945"
+    },
+    {
+      "question": "What is the tallest mammal?",
+      "options": ["Elephant", "Giraffe", "Horse", "Camel"],
+      "correct": "Giraffe"
+    },
+    {
+      "question": "How many colors are in a rainbow?",
+      "options": ["5", "6", "7", "8"],
+      "correct": "7"
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+      "correct": "Vatican City"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correct": "Mars"
+    },
+    {
+      "question": "How many days are in a leap year?",
+      "options": ["364", "365", "366", "367"],
+      "correct": "366"
+    }
+  ],
+  "Math": [
+    {
+      "question": "What is 5 + 7?",
+      "options": ["10", "11", "12", "13"],
+      "correct": "12"
+    },
+    {
+      "question": "What is 15 × 3?",
+      "options": ["40", "45", "50", "55"],
+      "correct": "45"
+    },
+    {
+      "question": "What is 100 ÷ 4?",
+      "options": ["20", "25", "30", "35"],
+      "correct": "25"
+    },
+    {
+      "question": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correct": "8"
+    },
+    {
+      "question": "What is 2³ (2 cubed)?",
+      "options": ["6", "8", "10", "12"],
+      "correct": "8"
+    },
+    {
+      "question": "What is 12 × 12?",
+      "options": ["124", "132", "144", "156"],
+      "correct": "144"
+    },
+    {
+      "question": "What is 50% of 200?",
+      "options": ["50", "75", "100", "150"],
+      "correct": "100"
+    },
+    {
+      "question": "What is 9 × 7?",
+      "options": ["56", "63", "72", "81"],
+      "correct": "63"
+    },
+    {
+      "question": "What is 1000 - 342?",
+      "options": ["558", "658", "668", "758"],
+      "correct": "658"
+    },
+    {
+      "question": "What is the square root of 81?",
+      "options": ["7", "8", "9", "10"],
+      "correct": "9"
+    }
+  ],
+  "Science": [
+    {
+      "question": "What is H2O?",
+      "options": ["Oxygen", "Hydrogen", "Water", "Carbon"],
+      "correct": "Water"
+    },
+    {
+      "question": "How many planets are in our solar system?",
+      "options": ["7", "8", "9", "10"],
+      "correct": "8"
+    },
+    {
+      "question": "What is the speed of light?",
+      "options": ["299,792 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
+      "correct": "299,792 km/s"
+    },
+    {
+      "question": "What gas do plants absorb?",
+      "options": ["Oxygen", "Nitrogen", "CO2", "Hydrogen"],
+      "correct": "CO2"
+    },
+    {
+      "question": "What is the smallest unit of life?",
+      "options": ["Atom", "Cell", "Molecule", "Organ"],
+      "correct": "Cell"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Go", "Au", "Gd", "Ag"],
+      "correct": "Au"
+    },
+    {
+      "question": "What organ pumps blood through the body?",
+      "options": ["Liver", "Lungs", "Heart", "Brain"],
+      "correct": "Heart"
+    },
+    {
+      "question": "How many bones are in the human body?",
+      "options": ["186", "206", "226", "246"],
+      "correct": "206"
+    },
+    {
+      "question": "What is the center of an atom called?",
+      "options": ["Electron", "Proton", "Neutron", "Nucleus"],
+      "correct": "Nucleus"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": ["Liver", "Brain", "Skin", "Heart"],
+      "correct": "Skin"
+    }
+  ],
+  "Geography": [
+    {
+      "question": "What is the largest country by area?",
+      "options": ["China", "USA", "Russia", "Canada"],
+      "correct": "Russia"
+    },
+    {
+      "question": "Which continent is the Sahara Desert in?",
+      "options": ["Asia", "Africa", "Australia", "Americas"],
+      "correct": "Africa"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Osaka", "Kyoto", "Tokyo", "Nagoya"],
+      "correct": "Tokyo"
+    },
+    {
+      "question": "How many continents are there?",
+      "options": ["5", "6", "7", "8"],
+      "correct": "7"
+    },
+    {
+      "question": "What is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correct": "Nile"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "correct": "Canberra"
+    },
+    {
+      "question": "Which country has the most population?",
+      "options": ["India", "China", "USA", "Indonesia"],
+      "correct": "India"
+    },
+    {
+      "question": "What is the smallest continent?",
+      "options": ["Europe", "Antarctica", "Australia", "South America"],
+      "correct": "Australia"
+    },
+    {
+      "question": "What mountain range separates Europe and Asia?",
+      "options": ["Alps", "Himalayas", "Ural", "Andes"],
+      "correct": "Ural"
+    },
+    {
+      "question": "Which ocean is the deepest?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "correct": "Pacific"
+    }
+  ],
+  "History": [
+    {
+      "question": "Who discovered America?",
+      "options": ["Marco Polo", "Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan"],
+      "correct": "Christopher Columbus"
+    },
+    {
+      "question": "In what year did the Titanic sink?",
+      "options": ["1910", "1911", "1912", "1913"],
+      "correct": "1912"
+    },
+    {
+      "question": "Who was the first president of the United States?",
+      "options": ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"],
+      "correct": "George Washington"
+    },
+    {
+      "question": "What year did World War I begin?",
+      "options": ["1912", "1914", "1916", "1918"],
+      "correct": "1914"
+    },
+    {
+      "question": "Who built the Great Wall of China?",
+      "options": ["Ming Dynasty", "Qin Dynasty", "Han Dynasty", "Tang Dynasty"],
+      "correct": "Qin Dynasty"
+    },
+    {
+      "question": "In which year did the Berlin Wall fall?",
+      "options": ["1987", "1988", "1989", "1990"],
+      "correct": "1989"
+    },
+    {
+      "question": "Who was the first man on the moon?",
+      "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+      "correct": "Neil Armstrong"
+    },
+    {
+      "question": "What ancient wonder is located in Egypt?",
+      "options": ["Colossus of Rhodes", "Hanging Gardens", "Pyramids of Giza", "Lighthouse of Alexandria"],
+      "correct": "Pyramids of Giza"
+    },
+    {
+      "question": "Who wrote the Declaration of Independence?",
+      "options": ["George Washington", "Benjamin Franklin", "Thomas Jefferson", "John Adams"],
+      "correct": "Thomas Jefferson"
+    },
+    {
+      "question": "What empire was ruled by Julius Caesar?",
+      "options": ["Greek", "Roman", "Persian", "Byzantine"],
+      "correct": "Roman"
+    }
+  ],
+  "Sports": [
+    {
+      "question": "How many players are on a soccer team?",
+      "options": ["9", "10", "11", "12"],
+      "correct": "11"
+    },
+    {
+      "question": "What sport is played at Wimbledon?",
+      "options": ["Cricket", "Tennis", "Golf", "Rugby"],
+      "correct": "Tennis"
+    },
+    {
+      "question": "How many rings are on the Olympic flag?",
+      "options": ["4", "5", "6", "7"],
+      "correct": "5"
+    },
+    {
+      "question": "In which sport do you perform a slam dunk?",
+      "options": ["Volleyball", "Basketball", "Tennis", "Badminton"],
+      "correct": "Basketball"
+    },
+    {
+      "question": "What is the maximum score in bowling?",
+      "options": ["200", "250", "300", "350"],
+      "correct": "300"
+    },
+    {
+      "question": "How long is a marathon?",
+      "options": ["26.2 miles", "30 miles", "20 miles", "25 miles"],
+      "correct": "26.2 miles"
+    },
+    {
+      "question": "What country won the first FIFA World Cup?",
+      "options": ["Brazil", "Uruguay", "Argentina", "Italy"],
+      "correct": "Uruguay"
+    },
+    {
+      "question": "How many points is a touchdown in American football?",
+      "options": ["5", "6", "7", "8"],
+      "correct": "6"
+    },
+    {
+      "question": "In which sport do you use a puck?",
+      "options": ["Field Hockey", "Ice Hockey", "Lacrosse", "Polo"],
+      "correct": "Ice Hockey"
+    },
+    {
+      "question": "What is the diameter of a basketball hoop?",
+      "options": ["16 inches", "18 inches", "20 inches", "22 inches"],
+      "correct": "18 inches"
+    }
+  ]
+}
