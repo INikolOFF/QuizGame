@@ -58,3 +58,4 @@ class QuizGame:
         self.best_scores = {cat: 0 for cat in self.categories.keys()}
         self.option_widgets = []
 
+# Added hover logic
