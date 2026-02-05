@@ -58,4 +58,93 @@ class QuizGame:
         self.best_scores = {cat: 0 for cat in self.categories.keys()}
         self.option_widgets = []
 
-# Added hover logic
+        self.setupUI()
+        self.show_category_selection()
+
+    def setupUI(self):
+        header = ctk.CTkFrame(self.window, fg_color="#1e1e3f", height=100)
+        header.pack(fill="x")
+        header.pack_propagate(False)
+
+        ctk.CTkLabel(header, text="ULTIMATE QUIZ", font=("Arial", 28, "bold"),
+                     fg_color="#1e1e3f", text_color="#ffffff").pack(pady=10)
+
+        self.score_label = ctk.CTkLabel(header, text="Score: 0/0", font=("Arial", 14, "bold"),
+                                        fg_color="#1e1e3f", text_color="#ffeb3b")
+        self.score_label.pack()
+
+        self.main_container = ctk.CTkFrame(self.window, fg_color="#0a0a15")
+        self.main_container.pack(expand=True, fill="both", padx=20, pady=20)
+
+    def show_category_selection(self):
+        self.clear_container()
+
+        ctk.CTkLabel(self.main_container, text="Select a Category",
+                     font=("Arial", 22, "bold"), fg_color="#0a0a15", text_color="#00e5ff").pack(pady=15)
+
+        cat_frame = ctk.CTkFrame(self.main_container, fg_color="#0a0a15")
+        cat_frame.pack(expand=True)
+
+        category_list = ["General Knowledge", "Math", "Science", "Geography", "Random"]
+
+        # colors for each button, picked these manually
+        cat_colors = {
+            "General Knowledge": ("#c62828", "#a01e1e"),
+            "Math": ("#0d47a1", "#093478"),
+            "Science": ("#1b5e20", "#134516"),
+            "Geography": ("#e65100", "#b33d00"),
+            "Random": ("#6a1b9a", "#4e1272"),
+        }
+
+        for category in category_list:
+            color, hover = cat_colors[category]
+            btn_frame = ctk.CTkFrame(cat_frame, fg_color="#0a0a15")
+            btn_frame.pack(pady=6)
+
+            btn = ctk.CTkButton(btn_frame, text=category,
+                                command=lambda c=category: self.start_quiz(c),
+                                font=("Arial", 15, "bold"), fg_color=color, text_color="#ffffff",
+                                width=280, height=40, cursor="hand2", corner_radius=15,
+                                hover_color=hover, border_width=0)
+            btn.pack()
+
+            if category != "Random":
+                best = self.best_scores[category]
+                if best > 0:
+                    ctk.CTkLabel(btn_frame, text=f"Best: {best}/{len(self.categories[category])}",
+                                 font=("Arial", 9, "bold"), fg_color="#0a0a15", text_color="#ffeb3b").pack()
+
+        settings_frame = ctk.CTkFrame(self.main_container, fg_color="#1e1e3f",
+                                      border_width=2, border_color="#1e1e3f", corner_radius=15)
+        settings_frame.pack(pady=10, fill="x", padx=15)
+
+        ctk.CTkLabel(settings_frame, text="Timer per question:", font=("Arial", 11, "bold"),
+                     fg_color="#1e1e3f", text_color="#00e5ff").pack(side="left", padx=5, pady=10)
+
+        self.timer_var = ctk.StringVar(value="15")
+
+        for opt in ["10", "15", "20", "30", "Off"]:
+            label = f"{opt}s" if opt != "Off" else opt
+            ctk.CTkRadioButton(settings_frame, text=label,
+                               variable=self.timer_var, value=opt,
+                               font=("Arial", 10, "bold"), fg_color="#00e5ff",
+                               text_color="#ffffff", border_color="#00e5ff",
+                               hover_color="#00b8d4").pack(side="left", padx=5)
+
+    def start_quiz(self, category):
+        self.current_category = category
+        print(f"Starting quiz: {category}")
+
+        if category == "Random":
+            all_q = []
+            for cat_name, questions in self.categories.items():
+                if cat_name != "Random":
+                    all_q.extend(questions)
+            random.shuffle(all_q)
+            self.current_questions = all_q[:10]
+        else:
+            self.current_questions = self.categories[category].copy()
+            random.shuffle(self.current_questions)
+
+        self.current_question_index = 0
+        self.score = 0
